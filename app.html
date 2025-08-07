@@ -6,14 +6,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="centered-page" id="page1">
 
-    <div id="salary">
+    <div class="salary">
         <h1> Enter Your Net Salary </h1>
-        <input type="number" required> <input type="submit" value="Go!!" onclick="window.location='page2.html'">
+        <form action="dialog">
+            <!-- <label for='textbox'> Net Salary</label> -->
+            <input type="number" id="textbox" required> <br><br>
+            <input type="submit" class="button" value="Go!!" onclick="window.location='page2.html'">
+
+        </form>
 
     </div>
 
 </body>
 
 </html>
+
+<!-- .salary input[type="number"],
+.salary input[type="submit"] {
+    width: 220px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+.salary input[type="submit"] {
+    /* Optional: styling to look more like a button */
+    cursor: pointer;
+} -->

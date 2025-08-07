@@ -2,22 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(201, 199, 199);
+
 }
 
+body.centered-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 199, 199);
+}
 
 h1 {
     color: rgb(212, 146, 22);
 }
 
-button {
+
+.car-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+}
+
+/* .cars1>*,
+.cars2>*,
+.cars3>* {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.salary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.salary>* {
+    margin-bottom: 16px;
+}
+
+#page1 .button,
+#page2 input[type='submit'],
+#page1 input[type="number"] {
+    width: 220px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+#page1 .button,
+#page2 input[type='submit'] {
+    cursor: pointer;
+}
+
+
+/* input#textbox {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input#button {
+    margin-left: 120px;
+} */
+
+
+
+
+/* button {
     width: 20px;
     height: 20px;
 
-}
-
-div#salary {
-    text-align: center;
-    margin-top: 450px;
-
-}
+} */
